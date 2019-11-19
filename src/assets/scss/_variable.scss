@@ -1,0 +1,46 @@
+// -------------------------------------
+//   Font
+// -------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,700&display=swap');
+$font-family: 'Noto Sans TC', 'helvatica', 'Arial', sans-serif, '微軟正黑體';
+$font-size-base: 1rem;
+
+
+// -------------------------------------
+//   Layout
+// -------------------------------------
+
+$break-point: 540px, 768px, 960px, 1280px;
+$aside-width: 240px;
+
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+$color-primary: #409eff;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #c0c4cc, #909399, #606266, #303133;
+$color-danger: #f56c6c;
+$color-success: #67c23a;
+$color-warning: #e6a23c;
+$color-info: #909399;
+
+// general
+$font-main-color: nth($color-gray, 4);
+$font-label-color: nth($color-gray, 2);
+
+$border-color: #f2f6fc, #ebeef5, #e4e7ed, #dcdfe6;
+
+// body
+$body-bg-color: #f5f7fa;
+
+// table
+$th-bg: #f5f7fa;
+
+// container-right
+$container-right-bg-color: $color-white;
+
+// list link
+$list-link-color: $font-label-color;
