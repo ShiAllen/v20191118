@@ -2,19 +2,45 @@
   <div class="myUI">
     <h1>{{ msg }}</h1>
     <p>
-       MY Element UI Test 
+       MY Element UI Test {{count}} <br/>
+       me.length : {{meCount}}<br/>
+       msg :{{message}}
     </p>
-   
+<div>
+  <button  @click="add2">add 2</button>
+  <button  @click="add10">add 10</button>
+</div>
      
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'Hello Element UI',
+  name: 'my-ui',
   props: {
     msg: String
+  },
+  computed: {
+    message(){
+      return this.$store.state.message ;
+    },
+    count () {
+      return this.$store.state.count ;
+    },
+    meCount () {
+     return this.$store.getters.meCount  ;
+    }
+  },
+  methods:{
+    add2:function(){
+	    this.$store.commit('increment',2);
+    },
+      add10:function(){
+	    this.$store.commit('increment',10);
+    }
   }
+
 }
 </script>
 

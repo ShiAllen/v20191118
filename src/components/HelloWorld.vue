@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ msg }}{{message}}c:{{count}}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -37,8 +37,15 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
-}
+  }, 
+  computed: {
+    message(){
+      return this.$store.state.message ;
+    },
+    count(){
+        return this.$store.state.count ;
+    }
+}}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
