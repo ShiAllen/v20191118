@@ -8,7 +8,7 @@ import locale from 'element-ui/lib/locale/lang/zh-TW'
 import '@/assets/scss/style.scss'
 
 // 假資料
-import '@/mock/index.js'
+ // import '@/mock/index.js'
 
 Vue.use(ElementUI, { locale }) // 設定語言為繁中
 Vue.config.productionTip = false
